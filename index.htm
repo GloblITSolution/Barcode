@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="d.ico" type="image/x-icon">
+	<title>Barcode</title>
+	<script src="barCode-all.js"></script>
+<script>
+var aa;
+var bb;
+var x;
+function a(){
+	if(vars.aa!='123'){
+		if(document.f2.aa.value=='123'){
+			document.f2.submit();
+		}
+	}
+}
+
+var vars;
+	getUrlVars();
+	function getUrlVars() {
+			vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+    return vars;
+	}
+
+function myFunction(event) {
+ x = event.which || event.keyCode;
+}
+</script>
+</head>
+<body style="background-image: url('background1.jpg');" style="width:800px;height:700px;" oncontextmenu="return false;" onload="document.width=800;document.height=700;document.f2.aa.focus();if(vars.aa=='123'){document.getElementById('block').style.display='none';document.ff.vv1.focus();}" >
+<div id='block' style="position:absolute;top:0px;left:0px;height:800px;width:1280px;;background-image: url('background1.jpg');z-index:2;">
+	<br><br><br><br><br>
+	<center>
+	<form name="f2" action="index.htm" method="GET">
+	<input name="sdfsdfafafasdfasderg" type="password" style="display:none;" value="oijvbeasfasdfasdfr" /><br>
+	<input name="saasdfasdfasdfadsfaasdffsdf" type="password" style="display:none;" value="oijvbeuikyukyukyukr" /><br>
+	<b style="font-size:25px;position:relative;left:-80px;">Password:-<input name="aa" type="password" onkeyup="a()" /></b><br>
+	<input name="sdfsdbbbbbttfafafasdfasderg" type="password" style="display:none;" value="oijvbeasfasdfagggddsdfr" /><br>
+	<input name="saasdfasdfasaaaaawwdfadsfaasdffsdf" type="password" style="display:none;" value="oijvbeuikyukdfgghyukyukr" /><br>
+	</form>
+	</center>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div id="fm" style="position:relative;left:380px;">
+	<form name="ff" action="print.htm" method="GET">
+		<b style="color:black;font-size:25px;" >Line1:-</b><input name="vv1" id="1" style="width:70px;background:skyblue;" type="number" onclick="aa=this.id" onchange="aa=this.id" />&nbsp; <input name="vv2" id="2" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" />&nbsp; <input name="vv3" id="3" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" /><br>
+		<b style="color:black;font-size:25px;" >Line2:-</b><input name="vv4" id="4" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" />&nbsp; <input name="vv5" id="5" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" />&nbsp; <input name="vv6" id="6" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" /><br>
+		<b style="color:black;font-size:25px;" >Line3:-</b><input name="vv7" id="7" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" />&nbsp; <input name="vv8" id="8" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" />&nbsp; <input name="vv9" id="9" style="width:70px;background:skyblue;" type="number" onkeydown="myFunction(event);if(x==8){this.click()}" onclick="this.value='';aa=this.id" onfocus="this.value=document.getElementById(''+aa+'').value;" /><br><br>
+		<input style="position:relative;height:30px;left:160px;font-size:25px;" value="Print" type="submit" />
+
+</div><br/>
+	</form>
+	
+	<!--<div>
+		<img id="barcode3"/>
+		<script>JsBarcode("#barcode3", "9780199532179", {
+			format:"EAN13",
+			displayValue:true,
+			fontSize:20
+		});</script>
+	</div>
+
+	<div>
+		<img id="barcode4"/>
+		<script>
+			var repeat4 = function(){
+				var date = new Date();
+				JsBarcode("#barcode4",
+						date.getHours().zeroPadding() + ":" +
+						date.getMinutes().zeroPadding() + ":" +
+						date.getSeconds().zeroPadding(),
+					{displayValue: true});
+			};
+			setInterval(repeat4,1000);
+			repeat4();
+		</script>
+	</div>
+
+	<div>
+		<img id="barcode5"/>
+		<script>
+			var repeat5 = function(){
+				JsBarcode("#barcode5", Math.floor(1000000+Math.random()*9000000)+"",{displayValue:true,fontSize:20});
+			};
+			setInterval(repeat5,500);
+			repeat5();
+		</script>
+	</div> -->
+
+	</body>
+</html>

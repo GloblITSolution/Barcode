@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="barCode-all.js"></script>
+	<script>
+	//	Number.prototype.zeroPadding = function(){
+		//	var ret = "" + this.valueOf();
+			//return ret.length == 1 ? "0" + ret : ret;
+		//};
+		
+	var vars;
+	getUrlVars();
+	function getUrlVars() {
+			vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+			vars[key] = value;
+		});
+    return vars;
+	}
+		console.log(vars);
+	</script>
+
+</head>
+<body>
+<br><br><br><br><br><br>
+<!--1-->
+<div id="bar">
+	<div style="position:relative;float:left;">
+		<svg id="barcode1"/></svg>
+		<script>
+			JsBarcode("#barcode1", vars.vv1, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;float:left;">
+		<svg id="barcode2"/></svg>
+		<script>
+			JsBarcode("#barcode2", vars.vv2, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;left:3px;">
+		<svg id="barcode3"/></svg>
+		<script>
+			JsBarcode("#barcode3", vars.vv3, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div><br>
+<!--2-->
+	<div style="position:relative;float:left;">
+		<svg id="barcode4"/></svg>
+		<script>
+			JsBarcode("#barcode4", vars.vv4, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;float:left;">
+		<svg id="barcode5"/></svg>
+		<script>
+			JsBarcode("#barcode5", vars.vv5, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;left:3px;">
+		<svg id="barcode6"/></svg>
+		<script>
+			JsBarcode("#barcode6", vars.vv6, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div><br>
+<!--3-->
+	<div style="position:relative;float:left;">
+		<svg id="barcode7"/></svg>
+		<script>
+			JsBarcode("#barcode7", vars.vv7, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;float:left;">
+		<svg id="barcode8"/></svg>
+		<script>
+			JsBarcode("#barcode8", vars.vv8, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+	<div style="position:relative;left:3px;">
+		<svg id="barcode9"/></svg>
+		<script>
+			JsBarcode("#barcode9", vars.vv9, {
+			  format:"CODE128",
+			  displayValue:true,
+			  fontSize:15,
+			  lineColor: "#000000",
+			  height: 35,
+			  width: 1.5
+			});
+		</script>
+	</div>
+</div>
+</body>
+</html>
